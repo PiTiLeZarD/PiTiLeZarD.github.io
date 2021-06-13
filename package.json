@@ -20,7 +20,8 @@
         "regenerator-runtime": "^0.13.7"
     },
     "scripts": {
-        "predeploy": "parcel build --dist-dir ./docs/ src/index.html",
+        "build": "parcel build --dist-dir ./docs/ src/index.html",
+        "predeploy": "yarn build",
         "deploy": "gh-pages -d build"
     }
 }
