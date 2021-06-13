@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Resume React App",
     "main": "docs/index.html",
+    "homepage": "https://pitilezard.github.io/",
     "repository": "git@github.com:PiTiLeZarD/PiTiLeZarD.github.io.git",
     "author": "Jonathan Adami <pitilezard@gmail.com>",
     "license": "MIT",
