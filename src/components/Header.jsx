@@ -1,4 +1,5 @@
 import { withStyles } from "../theme";
+import ClipPic from "./ClipPic";
 import Section from "./Section";
 
 const styles = () => ({
@@ -15,6 +16,7 @@ const Header = (props) => {
 
     return (
         <Section id="header" style={classes.root}>
+            <ClipPic />
             <div style={classes.name}>Jonathan Adami</div>
         </Section>
     );

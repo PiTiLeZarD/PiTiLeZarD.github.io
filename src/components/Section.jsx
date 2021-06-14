@@ -4,6 +4,7 @@ const styles = ({ colours, sizes }) => ({
     wrapper: {
         width: sizes.page,
         margin: "auto",
+        position: "relative",
     },
     back: {
         backgroundColor: colours.primary,
