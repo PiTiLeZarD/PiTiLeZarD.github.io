@@ -23,6 +23,6 @@
         "dev": "parcel src/index.html",
         "build": "parcel build --dist-dir ./docs/ src/index.html",
         "predeploy": "yarn build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d docs"
     }
 }
