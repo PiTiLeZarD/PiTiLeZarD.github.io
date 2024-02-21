@@ -10,11 +10,11 @@
         "process": "^0.11.10"
     },
     "scripts": {
-        "clean": "rm -Rf .parcel-cache",
+        "clean": "rm -Rf .parcel-cache docs",
         "dev": "parcel src/index.html",
         "build": "parcel build --dist-dir ./docs/ src/index.html",
-        "predeploy": "yarn build",
-        "deploy": "gh-pages -d docs"
+        "prepages": "yarn clean && yarn build",
+        "pages": "gh-pages -d docs"
     },
     "dependencies": {
         "gh-pages": "^6.1.1",

@@ -1,3 +1,3 @@
 # PiTiLeZarD.github.io
 
-Just testing if this appears on my profile
+Quick landing page for projects. Will possibly be a resume at some point ;)
