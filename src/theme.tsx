@@ -1,3 +1,5 @@
+import React from "react";
+
 const colours = {
     background: "#F8FCDA",
     hover: "#E3E9C2",
@@ -15,5 +17,4 @@ export const theme = { colours, sizes };
 export const withStyles =
     (styles) =>
     (Component) =>
-    ({ ...props }) =>
-        <Component classes={styles(theme)} {...props} />;
+    ({ ...props }) => <Component classes={styles(theme)} {...props} />;

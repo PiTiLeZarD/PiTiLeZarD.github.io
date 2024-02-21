@@ -1,3 +1,5 @@
+import React from "react";
+
 import { withStyles } from "../theme";
 const styles = () => ({
     root: {
@@ -11,7 +13,7 @@ const styles = () => ({
 });
 const ClipPic = (props) => {
     const { classes } = props;
-    return <div style={classes.root}>IMG</div>;
+    return <img style={classes.root} src="https://avatars.githubusercontent.com/u/5304?v=4" />;
 };
 
 export default withStyles(styles)(ClipPic);

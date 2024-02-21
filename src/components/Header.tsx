@@ -1,13 +1,17 @@
+import React from "react";
 import { withStyles } from "../theme";
 import ClipPic from "./ClipPic";
 import Section from "./Section";
 
 const styles = () => ({
     root: {
-        padding: "4em 0",
+        padding: "2em 0",
     },
     name: {
         textTransform: "uppercase",
+        textAlign: "center",
+        fontWeight: "bold",
+        fontSize: "30px",
     },
 });
 
@@ -17,7 +21,7 @@ const Header = (props) => {
     return (
         <Section id="header" style={classes.root}>
             <ClipPic />
-            <div style={classes.name}>Jonathan Adami</div>
+            <h1 style={classes.name}>Jonathan Adami</h1>
         </Section>
     );
 };

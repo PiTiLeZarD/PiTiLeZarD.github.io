@@ -1,28 +1,25 @@
 {
-    "name": "PiTiLeZarD",
+    "name": "pitilezard",
     "version": "1.0.0",
-    "description": "Resume React App",
-    "main": "docs/index.html",
+    "description": "Github homepage",
     "homepage": "https://pitilezard.github.io",
     "repository": "git@github.com:PiTiLeZarD/PiTiLeZarD.github.io.git",
     "author": "Jonathan Adami <pitilezard@gmail.com>",
     "license": "MIT",
     "devDependencies": {
-        "@babel/core": "^7.14.5",
-        "@babel/preset-env": "^7.14.5",
-        "@babel/preset-react": "^7.14.5",
-        "@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
-        "@parcel/babel-preset-env": "^2.0.0-alpha.3",
-        "gh-pages": "^3.2.0",
-        "parcel": "2.0.0-beta.3.1",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "regenerator-runtime": "^0.13.7"
+        "process": "^0.11.10"
     },
     "scripts": {
+        "clean": "rm -Rf .parcel-cache",
         "dev": "parcel src/index.html",
         "build": "parcel build --dist-dir ./docs/ src/index.html",
         "predeploy": "yarn build",
         "deploy": "gh-pages -d docs"
+    },
+    "dependencies": {
+        "gh-pages": "^6.1.1",
+        "parcel": "^2.11.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     }
 }

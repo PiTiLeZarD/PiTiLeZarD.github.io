@@ -1,3 +1,4 @@
+import React from "react";
 import { withStyles } from "../theme";
 
 const styles = ({ colours, sizes }) => ({

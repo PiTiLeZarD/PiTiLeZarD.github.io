@@ -1,11 +1,11 @@
-import { Fragment } from "react";
+import React from "react";
 import { theme } from "./theme";
 
-import { Header, Page, Footer } from "./components";
+import { Footer, Header, Page } from "./components";
 
-const App = (props) => {
+const App = () => {
     return (
-        <Fragment>
+        <>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
 
             <style type="text/css">{`
@@ -21,7 +21,7 @@ const App = (props) => {
             <Header />
             <Page />
             <Footer />
-        </Fragment>
+        </>
     );
 };
 
