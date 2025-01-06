@@ -1,9 +1,9 @@
-import React from "react";
-import { withStyles } from "../theme";
-import ClipPic from "./ClipPic";
-import Section from "./Section";
+import { StyleFn, theme } from "@/theme";
+import { ClipPic } from "@cmp/clippic";
+import { Section } from "@cmp/section";
+import { FC } from "react";
 
-const styles = () => ({
+const styles: StyleFn = () => ({
     root: {
         padding: "2em 0",
     },
@@ -15,8 +15,8 @@ const styles = () => ({
     },
 });
 
-const Header = (props) => {
-    const { classes } = props;
+export const Header: FC<object> = () => {
+    const classes = styles(theme);
 
     return (
         <Section id="header" style={classes.root}>
@@ -25,5 +25,3 @@ const Header = (props) => {
         </Section>
     );
 };
-
-export default withStyles(styles)(Header);

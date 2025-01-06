@@ -1,9 +1,9 @@
-import React from "react";
+import { Footer } from "@cmp/footer";
+import { Header } from "@cmp/header";
+import { Page } from "@cmp/page";
 import { theme } from "./theme";
 
-import { Footer, Header, Page } from "./components";
-
-const App = () => {
+export const App = () => {
     return (
         <>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
@@ -24,5 +24,3 @@ const App = () => {
         </>
     );
 };
-
-export default App;

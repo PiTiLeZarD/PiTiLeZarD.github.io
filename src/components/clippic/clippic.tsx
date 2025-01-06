@@ -1,7 +1,7 @@
-import React from "react";
+import { StyleFn, theme } from "@/theme";
+import { FC } from "react";
 
-import { withStyles } from "../theme";
-const styles = () => ({
+const styles: StyleFn = () => ({
     root: {
         width: "150px",
         height: "150px",
@@ -11,9 +11,7 @@ const styles = () => ({
         top: "50%",
     },
 });
-const ClipPic = (props) => {
-    const { classes } = props;
+export const ClipPic: FC<object> = () => {
+    const classes = styles(theme);
     return <img style={classes.root} src="https://avatars.githubusercontent.com/u/5304?v=4" />;
 };
-
-export default withStyles(styles)(ClipPic);

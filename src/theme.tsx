@@ -1,4 +1,4 @@
-import React from "react";
+import { CSSProperties } from "react";
 
 const colours = {
     background: "#F8FCDA",
@@ -14,7 +14,4 @@ const sizes = {
 
 export const theme = { colours, sizes };
 
-export const withStyles =
-    (styles) =>
-    (Component) =>
-    ({ ...props }) => <Component classes={styles(theme)} {...props} />;
+export type StyleFn = (props: typeof theme) => Record<string, CSSProperties>;

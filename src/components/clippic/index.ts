@@ -1,0 +1,1 @@
+export { ClipPic } from "./clippic";

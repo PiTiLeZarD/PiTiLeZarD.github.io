@@ -1,7 +1,7 @@
-import React from "react";
-import { withStyles } from "../theme";
+import { StyleFn, theme } from "@/theme";
+import { CSSProperties, FC, PropsWithChildren } from "react";
 
-const styles = ({ colours, sizes }) => ({
+const styles: StyleFn = ({ colours, sizes }) => ({
     wrapper: {
         width: sizes.page,
         margin: "auto",
@@ -15,8 +15,14 @@ const styles = ({ colours, sizes }) => ({
     },
 });
 
-const Section = (props) => {
-    const { id, variant, classes, children, ...otherProps } = props;
+export type SectionProps = {
+    id: string;
+    variant?: "back" | "front";
+    style?: CSSProperties;
+};
+
+export const Section: FC<PropsWithChildren<SectionProps>> = ({ id, variant = "back", children, ...otherProps }) => {
+    const classes = styles(theme);
     return (
         <section id={id} style={classes[variant]}>
             <div style={classes.wrapper}>
@@ -25,9 +31,3 @@ const Section = (props) => {
         </section>
     );
 };
-
-Section.defaultProps = {
-    variant: "back",
-};
-
-export default withStyles(styles)(Section);

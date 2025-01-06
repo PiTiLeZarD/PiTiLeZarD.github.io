@@ -1,15 +1,14 @@
-import React from "react";
-import { withStyles } from "../theme";
-import Section from "./Section";
+import { StyleFn, theme } from "@/theme";
+import { Section } from "@cmp/section";
 
-const styles = () => ({
+const styles: StyleFn = () => ({
     root: {
         padding: "5em 0 2em 0",
     },
 });
 
-const Page = (props) => {
-    const { classes } = props;
+export const Page = () => {
+    const classes = styles(theme);
     return (
         <Section id="page" variant="front" style={classes.root}>
             <p>Looking for a project I've made?</p>
@@ -24,5 +23,3 @@ const Page = (props) => {
         </Section>
     );
 };
-
-export default withStyles(styles)(Page);
