@@ -1,9 +1,8 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { App } from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <App />
+        <a href="http://localhost:19200/src/index.html">App</a>
     </StrictMode>
 );

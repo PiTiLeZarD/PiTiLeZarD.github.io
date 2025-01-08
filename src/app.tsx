@@ -1,9 +1,10 @@
 import { Footer } from "@cmp/footer";
 import { Header } from "@cmp/header";
 import { Page } from "@cmp/page";
+import { createRoot } from "react-dom/client";
 import { theme } from "./theme";
 
-export const App = () => {
+const App = () => {
     return (
         <>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
@@ -24,3 +25,6 @@ export const App = () => {
         </>
     );
 };
+
+const root = document.getElementById("root");
+createRoot(root!).render(<App />);
