@@ -1,5 +1,6 @@
-import { StyleFn, theme } from "@/theme";
 import { CSSProperties, FC, PropsWithChildren } from "react";
+
+import { StyleFn, theme } from "@/theme";
 
 const styles: StyleFn = ({ colours, sizes }) => ({
     wrapper: {

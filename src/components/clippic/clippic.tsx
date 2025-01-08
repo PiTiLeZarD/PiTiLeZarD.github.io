@@ -1,5 +1,6 @@
-import { StyleFn, theme } from "@/theme";
 import { FC } from "react";
+
+import { StyleFn, theme } from "@/theme";
 
 const styles: StyleFn = () => ({
     root: {

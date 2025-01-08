@@ -8,19 +8,20 @@
     "author": "Jonathan Adami <pitilezard@gmail.com>",
     "license": "MIT",
     "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^5.2.1",
         "@types/react": "^19.0.2",
         "@types/react-dom": "^19.0.2",
         "@vitejs/plugin-react": "^4.3.4",
         "gh-pages": "^6.1.1",
+        "prettier": "^3.4.2",
         "process": "^0.11.10",
         "react-cosmos": "^6.2.3",
         "react-cosmos-plugin-vite": "^6.2.0",
         "vite": "^6.0.7"
     },
     "scripts": {
-        "clean": "rm -Rf .parcel-cache docs",
-        "dev": "cosmos",
-        "build": "parcel build --dist-dir ./docs/ src/index.html",
+        "clean": "rm -Rf docs dist",
+        "build": "vite build --outDir ./docs/",
         "prepages": "yarn clean && yarn build",
         "pages": "gh-pages -d docs"
     },

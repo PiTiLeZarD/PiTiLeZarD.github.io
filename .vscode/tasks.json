@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Deploy APP",
+            "type": "shell",
+            "command": "docker/build",
+            "args": ["${input:app}", "--deploy", "${input:environment}"],
+            "group": "build"
+        },
+        {
+            "label": "Pages",
+            "type": "shell",
+            "command": "yarn pages",
+            "group": "build"
+        },
+        {
+            "label": "Cosmos",
+            "type": "shell",
+            "command": "yarn cosmos",
+            "group": "build"
+        },
+        {
+            "label": "Types check",
+            "type": "shell",
+            "command": "tsc",
+            "group": "build"
+        },
+        {
+            "label": "Prettier check",
+            "type": "shell",
+            "command": "[ 0 -eq `grep -ri 'console.log' src | wc -l`  ] && npx prettier -c src",
+            "group": "build"
+        },
+    ],
+}

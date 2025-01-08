@@ -1,7 +1,9 @@
+import { createRoot } from "react-dom/client";
+
 import { Footer } from "@cmp/footer";
 import { Header } from "@cmp/header";
 import { Page } from "@cmp/page";
-import { createRoot } from "react-dom/client";
+
 import { theme } from "./theme";
 
 export const App = () => {

@@ -1,7 +1,8 @@
+import { FC } from "react";
+
 import { StyleFn, theme } from "@/theme";
 import { ClipPic } from "@cmp/clippic";
 import { Section } from "@cmp/section";
-import { FC } from "react";
 
 const styles: StyleFn = () => ({
     root: {
