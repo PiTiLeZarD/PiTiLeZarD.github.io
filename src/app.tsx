@@ -4,7 +4,7 @@ import { Page } from "@cmp/page";
 import { createRoot } from "react-dom/client";
 import { theme } from "./theme";
 
-const App = () => {
+export const App = () => {
     return (
         <>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
