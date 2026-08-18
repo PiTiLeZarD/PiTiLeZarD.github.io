@@ -1,1 +1,0 @@
-export { ClipPic } from "./clippic";

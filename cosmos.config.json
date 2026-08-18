@@ -1,7 +1,0 @@
-{
-    "port": 19000,
-    "plugins": ["react-cosmos-plugin-vite"],
-    "vite": {
-        "port": 19200
-    }
-}
